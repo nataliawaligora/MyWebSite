@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", Candara, sans-serif;
+}
+
+/*Intro side*/
+
+.mainEffect {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+#name {
+    display: inline-block;
+    position: absolute;
+    top: 15vh;
+    left: 20vh;
+    /*font-family: "Hand Me Down S (BRK)";*/
+    font-family: Brussels;
+    text-shadow: 0.45vh 0.8vh black, 0.45vh 0.9vh #FFB2B2;
+    font-size: 15vh;
+    /*color:lightblue;*/
+    color: #BF8686;
+
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+/*Main side */
+
+#main, #personalInformation, #workExperience, #education, #technicalSkills  {
+    height: 100vh;
+    width: 100%;
+}
+
+#main{
+    background-image: url('../images/GreenBackG.jpg');
+}
+#personalInformation, #workExperience, #education, #technicalSkills {
+    background-image: url('../images/GreenBackG.jpg');
+}
+
+.menu {
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+}
+
+.menu li {
+    display: inline-block;
+
+}
+
+.menu ul {
+    padding-top: 5vh;
+    padding-left: 20vh;
+}
+
+.notLighted {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-size: 4vh;
+    color: white;
+    padding: 2vh;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 23%;
+}
+
+.enlight{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-size: 4vh;
+    color: red;
+    text-shadow: 5vh 3vh  red, 1.2vh 1.2vh 9px red;
+    padding: 2vh;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 23%;
+}
+
+.menu ul li:hover {
+}
+
+.moveButton a {
+    display: inline-block;
+    padding: 5vh;
+    font-size: xx-large;
+    font-family: "Arial";
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    text-decoration: none;
+    margin-top: 50vh;
+    margin-left: 45vw;
+}
+
+.moveButton a:hover {
+    background-color: azure;
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+}
+
+.picture {
+    position: absolute;
+    top: 7vh;
+    left: 7vh;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    font-size: xx-large;
+    font-family: "Arial";
+    color: white;
+    background-image: url("../images/me.jpg");
+    background-size: 120%;
+    background-position-y: -40px;
+    background-position-x: -20px;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    text-decoration: none;
+    border: solid 15px antiquewhite;
+
+}
+
+.mainPicture {
+    position: absolute;
+    top: 20vh;
+    left: 10vh;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    font-size: xx-large;
+    font-family: "Arial";
+    color: white;
+    background-image: url("../images/me.jpg");
+    background-size: 120%;
+    background-position-y: -40px;
+    background-position-x: -20px;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    text-decoration: none;
+    border: solid 15px antiquewhite;
+
+}
+
+.mainGreetingTittle {
+    display: inline-block;
+    position: absolute;
+    top: 10vh;
+    left: 50vh;
+    padding: 5vh;
+    border-radius: 2vh;
+    background-color: antiquewhite;
+    border: solid 0.5vh antiquewhite;
+    font-family: Arial;
+    font-size: 1em;
+    color: Black;
+    width: 100vh;
+}
+
+.mainGreetingTittle:before{
+content: "";
+position: absolute;
+right: 100%;
+top: 3px;
+width: 0;
+height: 0;
+border-top: 100px solid transparent;
+border-right: 80px solid antiquewhite;
+border-bottom: 0px solid transparent;
+}
+
+em {
+    font-size: 1.5em;
+    font-family: "Actonia";
+}
+
+.greetingTittle {
+    display: inline-block;
+    position: absolute;
+    top: 20vh;
+    left: 60vh;
+    padding: 5vh;
+    border-radius: 2vh;
+    background-color: lavender;
+    border: solid 10px antiquewhite;
+    font-family: Arial;
+    font-size: 2em;
+
+}
+
+.greetingTittle:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid antiquewhite;
+    border-bottom: 13px solid transparent;
+}
+
+.clipArts {
+    display: inline-block;
+
+}
+
+.articleBackground{
+    display: inline-block;
+    position: relative;
+    top: 20vh;
+    left: 50vh;
+    padding: 5vh;
+    border-radius: 2vh;
+    background-color: antiquewhite;
+    border: solid 0.5vh antiquewhite;
+    font-family: Arial;
+    font-size: 1em;
+    color: Black;
+    width: 120vh;
+}
+
+.articleBackground h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 5vh;
+
+}
+.uniPicture{
+    position: relative;
+   height: 50%;
+    width: 50%;
+  margin-top: 2vh;
+}
+
+
+.linkTofloorball,.linkToOrientering{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-family: Arial;
+    padding: 1vh;
+    background: greenyellow;
+    margin: 5vh;
+    border-radius: 2vh;
+    font-weight: bolder;
+}
+
+.linkTofloorball:hover,.linkToOrientering:hover{
+    text-decoration: none;
+    font-family: Arial;
+    padding: 2vh;
+    font-size: 120%;
+
+}
+.hideButton{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-family: Arial;
+    padding: 1vh;
+    background: greenyellow;
+    margin: 5vh;
+    border-radius: 2vh;
+    font-weight: bolder;
+}
+
+.hideButton:hover {
+    text-decoration: none;
+    font-family: Arial;
+    padding: 2vh;
+    font-size: 120%;
+}
+
+
+#floorball{
+    line-height: 5vh;
+    font-family: "Open Sans";
+}
+
+
+
+
+
+
+
