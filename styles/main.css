@@ -54,17 +54,20 @@
     }
 }
 
-
 /*Main side */
-
-#main, #personalInformation, #workExperience, #education, #technicalSkills  {
+#main{
     height: 100vh;
     width: 100%;
 }
+.mainPicture, #main, #personalInformation, #workExperience, #education, #technicalSkills {
 
-#main{
+    width: 100%;
+}
+
+#main {
     background-image: url('../images/GreenBackG.jpg');
 }
+
 #personalInformation, #workExperience, #education, #technicalSkills {
     background-image: url('../images/GreenBackG.jpg');
 }
@@ -96,13 +99,13 @@
     border-radius: 23%;
 }
 
-.enlight{
+.enlight {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
-    font-size: 4vh;
-    color: red;
-    text-shadow: 5vh 3vh  red, 1.2vh 1.2vh 9px red;
+    font-size: 4.5vh;
+    color: antiquewhite;
+    text-shadow: 0.2vh 0.2vh antiquewhite;
     padding: 2vh;
     font-family: 'Indie Flower', cursive;
     border-radius: 23%;
@@ -188,16 +191,16 @@
     width: 100vh;
 }
 
-.mainGreetingTittle:before{
-content: "";
-position: absolute;
-right: 100%;
-top: 3px;
-width: 0;
-height: 0;
-border-top: 100px solid transparent;
-border-right: 80px solid antiquewhite;
-border-bottom: 0px solid transparent;
+.mainGreetingTittle:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-right: 80px solid antiquewhite;
+    border-bottom: 0px solid transparent;
 }
 
 em {
@@ -236,7 +239,7 @@ em {
 
 }
 
-.articleBackground{
+.articleBackground {
     display: inline-block;
     position: relative;
     top: 20vh;
@@ -251,39 +254,38 @@ em {
     width: 120vh;
 }
 
-.articleBackground h1{
+.articleBackground h1 {
     font-family: 'Indie Flower', cursive;
     font-size: 5vh;
 
 }
-.uniPicture{
+
+.uniPicture {
     position: relative;
-   height: 50%;
+    height: 50%;
     width: 50%;
-  margin-top: 2vh;
+    margin-top: 2vh;
 }
 
-
-.linkTofloorball,.linkToOrientering{
+.linkTofloorball, .linkToOrientering {
     display: block;
     position: relative;
     text-decoration: none;
     font-family: Arial;
     padding: 1vh;
-    background: greenyellow;
-    margin: 5vh;
-    border-radius: 2vh;
     font-weight: bolder;
+
 }
 
-.linkTofloorball:hover,.linkToOrientering:hover{
+
+.linkTofloorball:hover, .linkToOrientering:hover {
     text-decoration: none;
     font-family: Arial;
-    padding: 2vh;
     font-size: 120%;
 
 }
-.hideButton{
+
+.hideButton {
     display: block;
     position: relative;
     text-decoration: none;
@@ -302,12 +304,10 @@ em {
     font-size: 120%;
 }
 
-
-#floorball{
+#floorball, #footOrienteering {
     line-height: 5vh;
     font-family: "Open Sans";
 }
-
 
 
 

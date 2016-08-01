@@ -53,13 +53,20 @@ $(document).ready(function () {
 // });
 
 $(document).ready(function () {
-    $('.uniPicture').hide();
-    $('#floorball').hide();
+    $('.floorBallArticle').hide();
 
     $('.linkTofloorball').click(function () {
-        $('.uniPicture').toggle();
-        $('#floorball').toggle();
+        $('.floorBallArticle').toggle();
+
     });
 });
 
+$(document).ready(function () {
+    $('.footOrienteeringArticle').hide();
+
+    $('.linkToOrienteering').click(function () {
+        $('.footOrienteeringArticle').toggle();
+
+    });
+});
 
