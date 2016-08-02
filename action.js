@@ -61,6 +61,7 @@ $(document).ready(function () {
     });
 });
 
+
 $(document).ready(function () {
     $('.footOrienteeringArticle').hide();
 
@@ -70,3 +71,10 @@ $(document).ready(function () {
     });
 });
 
+// $(document).ready(function(){
+//     $('.pages > div').hide();
+//     $('.menu ul li a').click(function(){
+//         $('#' + $(this).attr('id') + 'Container').show();
+//     });
+//     // $('#menu').
+// });

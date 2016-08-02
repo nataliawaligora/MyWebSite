@@ -20,14 +20,16 @@
     <div class="greetingTittle">Hi, my name is Natalia Waligóra and this is my CV</div>
 </div>
 <div id="mainWeb">
-    <div id="main">
+    <div id="mainContainer">
         <div class="menu">
             <ul>
-                <li><a class='notLighted' href="#main">Main</a></li>
-                <li><a class='notLighted' href="#personalInformation">Personal Information</a></li>
-                <li><a class='notLighted' href="#workExperience">Work Experience</a></li>
-                <li><a class='notLighted' href="#education">Education</a></li>
-                <li><a class='notLighted' href="#technicalSkills">Technical skills</a></li>
+                <li><a id='main' class='notLighted' href="#mainContainer">Main</a></li>
+                <li><a id='personalInformation' class='notLighted' href="#personalInformationContainer">Personal
+                    Information</a></li>
+                <li><a id='workExperience' class='notLighted' href="#workExperienceContainer">Work Experience</a></li>
+                <li><a id='education' class='notLighted' href="#educationContainer">Education</a></li>
+                <li><a id='technicalSkills' class='notLighted' href="#technicalSkillsContainer">Technical skills</a>
+                </li>
 
             </ul>
         </div>
@@ -40,72 +42,115 @@
             </div>
         </div>
     </div>
-    <div id="personalInformation">
-        <div class="articleBackground">
-            <article>
-                <h1>Personal Information</h1>
-                <hr>
-                <hr>
-                <h2 style="font-family: 'Indie Flower' ">I am very sporty girl and one of the most favourite activities
-                    I like to do as a hobby is:</h2>
+    <div class="pages">
+        <div id="personalInformationContainer">
+            <div class="articleBackground">
+                <article>
+                    <h1>Personal Information</h1>
+                    <hr>
+                    <hr>
+                    <h2 style="font-family: 'Indie Flower', sans-serif ">I am very sporty girl and one of the most favourite
+                        activities
+                        I like to do as a hobby is:</h2>
+
+                    <div class="inLine">
+                        <div class="SportButtonsStyles">
+                            <div class="imgFormator">
+                                <img class="linkTofloorball" src='images/floorball.png'>
+                                <span class="pictureTitle">FLOORBALL</span>
+                            </div>
+                            <div class="imgFormator">
+                                <img class="linkToOrienteering" src='images/footOrienteering.png'>
+                                <span class="pictureTitle">FOOT - O</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floorBallArticle">
+                        <p id="floorball">Floorball is the kind of hokey without the ice. I have been playing this
+                            game
+                            since
+                            2013 and at the beginning there were 2 girls in the team, including me.
+                            Now sometimes there is even 50% of women in group.
+                            I am still learning but now I can see that this game gave me a lot of experience,
+                            how to work in team and that I can`t misjudge the opponent.</p>
+                        <img class="uniPicture" src="images/uni.jpg">
+                    </div>
+                    <div class="footOrienteeringArticle">
+                        <p id="footOrienteering">Foot orienteering is time racing sport, where the
+                            participansts are expected to find the control points ,on the specific area, which have
+                            been
+                            shown on the given map.
+                            The most exciting element of that is the End of the route, when I know that it is
+                            possible
+                            to defeat
+                            my own weakness. It also allowed me to loos almost 5 kg.
+                        </p>
+
+                    </div>
 
 
-                <div class="SportButtonsStyles">
-                    <img class="linkTofloorball" src='images/floorball.png'>
-                    <p>FLOORBALL</p>
-                </div>
-                <div class="floorBallArticle">
-                    <p id="floorball">Floorball is the kind of hokey without the ice. I have been playing this game
-                        since
-                        2013 and at the beginning there were 2 girls in the team, including me.
-                        Now sometimes there is even 50% of women in group.
-                        I am still learning but now I can see that this game gave me a lot of experience,
-                        how to work in team and that I can`t misjudge the opponent.</p>
-                    <img class="uniPicture" src="images/uni.jpg" class="uniPicture">
-                </div>
-                <div class="SportButtonsStyles">
-                    <img class="linkToOrienteering" src='images/footOrienteering.png'>
-                </div>
-                <div class="footOrienteeringArticle">
-                    <p id="footOrienteering">Foot orienteering </p>
-
-                </div>
-
-
-            </article>
+                </article>
+            </div>
         </div>
-    </div>
-    <div id="workExperience">
-        <div class="articleBackground">
-            <article>
-                <h1>Work experience</h1>
-                <hr>
-                <hr>
-            </article>
+        <div id="workExperienceContainer">
+            <div class="articleBackground">
+                <article>
+                    <h1>Work experience</h1>
+                    <hr>
+                    <hr>
+                    <div>
+                        <div class="col-md-3 workExperienceStyle">II.2015 – IV.2016</div>
+                        <div class="col-md-6 workExperienceStyle">Promat – Woda Sp z o.o. Gdynia
+                            Indywidualne praktyki "Galwanizernia - Radmor" w ramach
+                            projektu magisterskiego związanego z instalacją podczyszczania
+                            ścieków popłucznych po procesach niklowania zapocą kolumn
+                            jonitowych oraz odzysku ww. metalu ciężkiego.
+                            Praca magisterska zakończona oceną bardzo dobrą
+                        </div>
+                    </div>
+                    <div>
+                        <div class="workExperienceStyle">IV.2014 – VI.2014</div>
+                        <p class="workExperienceStyle">Galwanizernia-Radmor Sp. zo.o</p>
+                    </div>
+                    <div>
+                        <div class="workExperienceStyle">VII.2012</div>
+                        <p class="workExperienceStyle">"Jard" Jadwiga Doffek</p>
+                    </div>
+                    <div>
+                        <div class="workExperienceStyle">I.2011 – XI.2014</div>
+                        <p class="workExperienceStyle">Synergia. Waligóra W. Construction design company</p>
+                    </div>
+                </article>
+            </div>
         </div>
-    </div>
-    <div id="education">
-        <div class="articleBackground">
-            <article>
-                <h1>Education</h1>
-                <hr>
-                <hr>
-            </article>
+        <div id="educationContainer">
+            <div class="articleBackground">
+                <article>
+                    <h1>Education</h1>
+                    <hr>
+                    <hr>
+                </article>
+            </div>
         </div>
-    </div>
 
-    <div id="technicalSkills">
-        <div class="articleBackground">
-            <article>
-                <h1>Technical Skills</h1>
-                <hr>
-                <hr>
-            </article>
+        <div id="technicalSkillsContainer">
+            <div class="articleBackground">
+                <article>
+                    <h1>Technical Skills</h1>
+                    <hr>
+                    <hr>
+                    <img class="skillsPicture" src="images/skills.png">
+                </article>
+            </div>
         </div>
     </div>
 </div>
-<script src="libs/jquery-3.0.0.min%20.js"></script>
-<script src="libs/jquery-migrate-1.4.1.min.js"></script>
-<script src="action.js"></script>
+<script type="text/javascript" src="libs/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="libs/jquery-3.0.0.min%20.js"></script>
+<script type="text/javascript" src="libs/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="action.js"></script>
+<script type="text/javascript" src="libs/bootstrap.js"></script>
+
+
 </body>
 </html>
