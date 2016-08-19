@@ -8,18 +8,31 @@ $(document).ready(function () {
 
 });
 
-$(document).ready(function () {
-    $('.picture, .greetingTittle').hide();
-    $('.moveButton a').mouseover(function () {
-        $('.picture,.greetingTittle').show();
-        $('#name').hide();
-    });
-    $('.moveButton a').mouseout(function () {
-        $('.picture, .greetingTittle').hide();
-        $('#name').show();
+// $(document).ready(function () {
+//     $('.picture, .greetingTittle').hide();
+//     $('.moveButton a').mouseover(function () {
+//         $('.picture,.greetingTittle').show();
+//         $('#name').hide();
+//     });
+//     $('.moveButton a').mouseout(function () {
+//         $('.picture, .greetingTittle').hide();
+//         $('#name').show();
+//
+//     })
+// });
+ $(document).ready(function () {
+    $('.notLighted').mouseover(function(){
+        $('.menu .enlight').removeClass('enlight');
+        $(this).addClass('enlight');
+        });
+     $('.enlighted').mouseout(function(){
+         $('.menu .enlight').removeClass('enlight');
+         // $(this).addClass('.notLighted');
+     });
+     $()
 
-    })
 });
+
 
 $(document).ready(function () {
     $('.notLighted').click(function () {

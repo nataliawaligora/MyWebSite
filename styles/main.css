@@ -8,7 +8,7 @@
 
 .mainEffect {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     right: 0;
@@ -17,14 +17,63 @@
     overflow: hidden;
     z-index: -100;
 }
+.greetingTittle {
+    display: inline-block;
+    position: absolute;
+    top: 20vh;
+    left: 60vh;
+    padding: 5vh;
+    border-radius: 2vh;
+    background-color: lavender;
+    border: solid 10px antiquewhite;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    display: none;
 
+}
+
+.greetingTittle:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid antiquewhite;
+    border-bottom: 13px solid transparent;
+    display: none;
+}
+
+.picture {
+    position: absolute;
+    top: 7vh;
+    left: 7vh;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    font-size: xx-large;
+    font-family: "Arial" ,sans-serif;
+    color: white;
+    background: url('../images/me.jpg'), no-repeat;
+
+    background-size: 120%;
+    background-position-y: -40px;
+    background-position-x: -20px;
+
+    border-radius: 100%;
+    text-decoration: none;
+    border: solid 15px antiquewhite;
+    display: none;
+
+}
 #name {
     display: inline-block;
     position: absolute;
     top: 15vh;
-    left: 20vh;
+    left: 15vh;
     /*font-family: "Hand Me Down S (BRK)";*/
-    font-family: Brussels;
+    font-family: Brussels, sans-serif;
     text-shadow: 0.45vh 0.8vh black, 0.45vh 0.9vh #FFB2B2;
     font-size: 15vh;
     /*color:lightblue;*/
@@ -32,15 +81,25 @@
 
 }
 
-@media screen and (max-width: 809px) {
+@media screen and (max-width: 890px) {
     #name {
-        left: 40vh;
+        left: 50vh;
+    }
+
+    .moveButton a {
+        top: 90vh;
+        left: 50vh;
     }
 }
 
-@media screen and (max-width: 809px) {
+@media screen and (max-width: 636px) {
+    #name {
+        left: 10vh;
+    }
+
     .moveButton a {
         top: 90vh;
+        left: 10vh;
     }
 }
 
@@ -78,11 +137,28 @@
 }
 
 #mainContainer {
-    background-image: url('../images/GreenBackG.jpg');
+    background-image: url('../images/tatry.JPG');
+    background-size: cover;
 }
 
-#personalInformationContainer, #workExperienceContainer, #educationContainer, #technicalSkillsContainer {
-    background-image: url('../images/GreenBackG.jpg');
+#technicalSkillsContainer {
+    background-image: url('../images/nosal.JPG');
+    background-size: cover;
+}
+
+#personalInformationContainer {
+    background-image: url('../images/loka.jpg');
+    background-size: cover;
+}
+
+#workExperienceContainer {
+    background-image: url('../images/giewont.JPG');
+    background-size: cover;
+}
+
+#educationContainer {
+    background-image: url('../images/kWierch.JPG');
+    background-size: cover;
 }
 
 .menu {
@@ -99,27 +175,29 @@
 .menu ul {
     padding-top: 5vh;
     padding-left: 20vh;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .notLighted {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     text-decoration: none;
     font-size: 4vh;
-    color: white;
-    padding: 2vh;
-    font-family: 'Indie Flower', cursive;
+    color: darkgray;
+    /*padding: 2vh;*/
+    padding-left: 2vh;
+    font-family:'Indie Flower',cursive;
     border-radius: 23%;
 }
 
 .enlight {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
     font-size: 4.5vh;
     color: antiquewhite;
     text-shadow: 0.2vh 0.2vh antiquewhite;
-    padding: 2vh;
+    padding-left: 2vh;
     font-family: 'Indie Flower', cursive;
     border-radius: 23%;
 }
@@ -131,12 +209,12 @@
     display: inline-block;
     padding: 5vh;
     font-size: xx-large;
-    font-family: "Arial";
+    font-family:"Arial", sans-serif;
     color: white;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 100%;
     text-decoration: none;
-    margin-top: 50vh;
+    margin-top: 60vh;
     margin-left: 45vw;
 }
 
@@ -147,26 +225,6 @@
     font-size: xx-large;
 }
 
-.picture {
-    position: absolute;
-    top: 7vh;
-    left: 7vh;
-    display: inline-block;
-    height: 300px;
-    width: 300px;
-    font-size: xx-large;
-    font-family: "Arial";
-    color: white;
-    background-image: url("../images/me.jpg");
-    background-size: 120%;
-    background-position-y: -40px;
-    background-position-x: -20px;
-    background-repeat: no-repeat;
-    border-radius: 100%;
-    text-decoration: none;
-    border: solid 15px antiquewhite;
-
-}
 
 .mainPicture {
     position: absolute;
@@ -176,13 +234,12 @@
     height: 300px;
     width: 300px;
     font-size: xx-large;
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     color: white;
-    background-image: url("../images/me.jpg");
+    background: url("../images/me.jpg"), no-repeat;
     background-size: 120%;
     background-position-y: -40px;
     background-position-x: -20px;
-    background-repeat: no-repeat;
     border-radius: 100%;
     text-decoration: none;
     border: solid 15px antiquewhite;
@@ -196,9 +253,9 @@
     left: 50vh;
     padding: 5vh;
     border-radius: 2vh;
-    background-color: antiquewhite;
+    background-color: rgba(250,235,215,0.5);
     border: solid 0.5vh antiquewhite;
-    font-family: Arial;
+    font-family: 'Arial' ,sans-serif;
     font-size: 1em;
     color: Black;
     width: 100vh;
@@ -212,40 +269,15 @@
     width: 0;
     height: 0;
     border-top: 100px solid transparent;
-    border-right: 80px solid antiquewhite;
-    border-bottom: 0px solid transparent;
+    border-right: 80px solid rgba(250,235,215,0.5);
+    border-bottom: 0 solid transparent;
 }
 
 em {
     font-size: 1.5em;
-    font-family: "Actonia";
+    font-family: "Actonia", sans-serif;
 }
 
-.greetingTittle {
-    display: inline-block;
-    position: absolute;
-    top: 20vh;
-    left: 60vh;
-    padding: 5vh;
-    border-radius: 2vh;
-    background-color: lavender;
-    border: solid 10px antiquewhite;
-    font-family: Arial;
-    font-size: 2em;
-
-}
-
-.greetingTittle:before {
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 26px;
-    width: 0;
-    height: 0;
-    border-top: 13px solid transparent;
-    border-right: 26px solid antiquewhite;
-    border-bottom: 13px solid transparent;
-}
 
 .clipArts {
     display: inline-block;
@@ -259,12 +291,13 @@ em {
     left: 50vh;
     padding: 5vh;
     border-radius: 2vh;
-    background-color: antiquewhite;
+    background-color: rgba(250,235,215,0.5);
     border: solid 0.5vh antiquewhite;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 1em;
     color: Black;
     width: 120vh;
+    height: auto !important;
 }
 
 .articleBackground h1 {
@@ -289,7 +322,7 @@ em {
     display: block;
     position: relative;
     text-decoration: none;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     padding: 1vh;
     font-weight: bolder;
 
@@ -299,7 +332,7 @@ span {
     display: block;
     margin-left: 30%;
     margin-right: 30%;
-    font-family: "Indie Flower";
+    font-family: "Indie Flower", sans-serif;
     font-weight: 900;
     font-size: larger;
 }
@@ -314,7 +347,7 @@ span {
     display: block;
     position: relative;
     text-decoration: none;
-    font-family: sans-serif,Arial;
+    font-family: sans-serif, Arial;
     padding: 1vh;
     background: greenyellow;
     margin: 5vh;
@@ -324,24 +357,36 @@ span {
 
 .hideButton:hover {
     text-decoration: none;
-    font-family:sans-serif, Arial;
+    font-family: sans-serif, Arial;
     padding: 2vh;
     font-size: 120%;
 }
 
 #floorball, #footOrienteering {
     line-height: 5vh;
-    font-family: sans-serif,"Open Sans";
+    font-family: sans-serif, "Open Sans";
 }
 
-.skillsPicture{
+.skillsPicture {
     width: 80%;
-    height: 80%;
+    height: 60%;
     border-radius: 2vh;
 }
-.workExperienceStyle{
+
+.workExperienceStyle {
     display: inline-block;
-    font-family:"Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
+.workExperienceStyleTitle {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    margin: 2vh 0;
+}
+
+.mainInformation {
+    font-size: 3vh;
+}
 
