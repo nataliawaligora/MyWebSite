@@ -129,12 +129,12 @@
 }
 
 /*Main side */
-#mainContainer, #personalInformationContainer, #workExperienceContainer, #educationContainer, #technicalSkillsContainer {
+#mainContainer, #personalInformationContainer, #workExperienceContainer, #educationContainer, #technicalSkillsContainer, .footer {
     min-height: 100vh;
     width: 100%;
 }
 
-#mainContainer {
+#mainContainer, .footer{
     background-image: url('../images/tatry.JPG');
     background-size: cover;
 }
@@ -455,3 +455,21 @@ span {
     font-size: 3vh;
 }
 
+.starSize{
+    width:8vh;
+    height: 6vh;
+}
+
+@media screen and (max-width: 320px) , screen and (max-height: 568px) {
+    .starSize{
+        width:5vh;
+        height:5vh;
+    }
+}
+
+@media screen and (max-width: 768px) , screen and (max-height: 1024px) {
+    .starSize{
+        width:5vh;
+        height:5vh;
+    }
+}
