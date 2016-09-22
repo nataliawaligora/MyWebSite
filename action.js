@@ -100,3 +100,11 @@ $(document).ready(function(){
         $(this).toggleClass('open');
     });
 });
+
+
+$(document).ready(function(){
+    $(('.hamburgerList')).hide();
+    $('#nav-icon1').click(function(){
+        $('.hamburgerList').toggle();
+    })
+});

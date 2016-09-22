@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Natalia`s WebSite</title>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="Shortcut icon" href="images/icon.png"/>
@@ -32,30 +34,38 @@
                 <span></span>
                 <span></span>
             </div>
+            <div class="col-xs-5 hamburgerList">
+                <a id='main' class='col-xs-12 notLighted' href="#mainContainer">Main</a>
+                <a id='personalInformation' class='col-xs-12 notLighted' href="#personalInformationContainer">Personal
+                    Information</a>
+                <a id='workExperience' class='col-xs-12 notLighted' href="#workExperienceContainer">Work Experience</a>
+                <a id='education' class='col-xs-12 notLighted' href="#educationContainer">Education</a>
+                <a id='technicalSkills' class='col-xs-12 notLighted' href="#technicalSkillsContainer">Technical
+                    skills</a>
+            </div>
+
+
             <div class="list">
                 <a id='main' class='col-lg-2 notLighted' href="#mainContainer">Main</a>
                 <a id='personalInformation' class='col-lg-2 notLighted' href="#personalInformationContainer">Personal
                     Information</a>
                 <a id='workExperience' class='col-lg-2 notLighted' href="#workExperienceContainer">Work Experience</a>
                 <a id='education' class='col-lg-2 notLighted' href="#educationContainer">Education</a>
-                <a id='technicalSkills' class='col-lg-2 notLighted' href="#technicalSkillsContainer">Technical skills</a>
+                <a id='technicalSkills' class='col-lg-2 notLighted' href="#technicalSkillsContainer">Technical
+                    skills</a>
             </div>
-            </ul>
         </div>
-
-
-        <div class="mainPicture"></div>
-        <div class="mainGreetingTittle">
-            Natalia Waligóra
+        <div class="articleBackground">
+            <h1>Natalia Waligóra</h1>
             <hr>
             <hr>
-            <em> Front-end-developer</em>
+            <p> Front-end-developer</p>
+            <div class="mainPicture"></div>
 
             <p class="mainInformation">Recently I `ve completed the infoShare Academy course.<br> I`ve decided that
                 that I wanne give a shot in the ET specialization.<br> The last 2 months in IAC gave me, a lot of
                 knowledge which before I would never dream of.
             </p>
-
         </div>
 
     </div>
@@ -66,10 +76,10 @@
                     <h1>Personal Information</h1>
                     <hr>
                     <hr>
-                    <h2 style="font-family: 'Indie Flower', sans-serif ">I am very sporty girl and one of the most
+                    <p>I am very sporty girl and one of the most
                         favourite
                         activities
-                        I like to do as a hobby is:</h2>
+                        I like to do as a hobby is:</p>
 
                     <div class="inLine">
                         <div class="SportButtonsStyles">
@@ -117,8 +127,10 @@
                     <hr>
                     <hr>
                     <div>
-                        <div class="col-md-3 workExperienceStyleTitle">II.2015 – IV.2016</div>
-                        <div class="col-md-6 workExperienceStyleTitle">Promat – Woda Sp z o.o. Gdynia</div>
+
+                        <div class="col-md-12 workExperienceStyleTitle">II.2015 – IV.2016 Promat – Woda Sp z o.o.
+                            Gdynia
+                        </div>
 
                         <div class="workExperienceStyle"> Projektowanie Stacji Uzdatniania Wody i Ścieków na bazie
                             systemów filtracyjnych typu: złoża jonowymienne, odwrócona
@@ -126,8 +138,9 @@
                         </div>
 
                     </div>
-                    <div class="col-md-3 workExperienceStyleTitle">IV.2014 – VI.2014</div>
-                    <div class="col-md-6 workExperienceStyleTitle">Galwanizernia-Radmor Sp. zo.o</div>
+                    <div class="col-md-12 workExperienceStyleTitle">IV.2014 – VI.2014 Galwanizernia-Radmor Sp. zo.o
+                    </div>
+
                     <div class="workExperienceStyle"> Indywidualne praktyki "Galwanizernia - Radmor" w ramach
                         projektu magisterskiego związanego z instalacją podczyszczania
                         ścieków popłucznych po procesach niklowania zapocą kolumn
@@ -136,16 +149,15 @@
                     </div>
 
                     <div>
-                        <div class="workExperienceStyleTitle">VII.2012</div>
-                        <p class="workExperienceStyleTitle">"Jard" Jadwiga Doffek</p>
+                        <p class="workExperienceStyleTitle">VII.2012 "Jard" Jadwiga Doffek</p>
                         <div class="workExperienceStyle"> Indywidualne praktyki w prywatnej firmie ”Jard” Jadwiga Doffek
                             w ramach nauki projektowania instalacji HVAC oraz instalacji
                             kanalizacyjnych i wodociągowych.
                         </div>
                     </div>
                     <div>
-                        <div class="workExperienceStyleTitle">I.2011 – XI.2014</div>
-                        <p class="workExperienceStyleTitle">Synergia. Waligóra W. Construction design company</p>
+                        <p class="workExperienceStyleTitle"> I.2011 – XI.2014 Synergia. Waligóra W. Construction design
+                            company</p>
                         <div class="workExperienceStyle"> Praktyki w firmie ”Synergia” w ramach odczytywania i tworzenia
                             rysunków za pomocą programów BricsCad i AutoCad.
                         </div>
@@ -159,9 +171,8 @@
                     <h1>Education</h1>
                     <hr>
                     <hr>
-                    <div class="col-md-3 workExperienceStyleTitle">2014 - Gdansk The University of Technology – MSc
+                    <div class="col-md-12 workExperienceStyleTitle">2014 - Gdansk The University of Technology – MSc
                     </div>
-                    <br>
                     <br>
                     <br>
                     <br>
@@ -170,7 +181,7 @@
                     <h1>About the Course and Project:</h1>
                     <hr>
                     <hr>
-                    <div class="col-md-3 workExperienceStyleTitle"> May - July 2016 InfoShareAcademy Course Front-
+                    <div class="col-md-12 workExperienceStyleTitle"> May - July 2016 InfoShareAcademy Course Front-
                         End-Developer
                     </div>
                     <br>
@@ -203,52 +214,52 @@
                 <h1>Technical Skills</h1>
                 <hr>
                 <hr>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <img class="skillsPicture" src="images/HTML5.png">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
 
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <img class="skillsPicture" src="images/css.png">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class=" skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <img class="skillsPicture" src="images/boostrap.png">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <img class="skillsPicture" src="images/javascript.png">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/blackStar.svg">
 
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <img class="skillsPicture" src="images/jquery.png">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class=" skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <img class="skillsPicture" src="images/webStorm.png">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class=" skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <img class="skillsPicture" src="images/github.png">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class=" skillsStars col-lg-6 col-md-6 col-sm-6">
                     <img class="skillsPicture" src="images/jira_64x64.png">
                     <img class="starSize" src="images/sttar.svg">
                     <img class="starSize" src="images/sttar.svg">
@@ -263,6 +274,7 @@
                 href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
             3.0 BY</a></div>
 </div>
+
 <script type="text/javascript" src="libs/jquery-2.2.3.min.js"></script>
 <!--<script type="text/javascript" src="libs/jquery-3.0.0.min%20.js"></script>-->
 <script type="text/javascript" src="libs/jquery-migrate-1.4.1.min.js"></script>
