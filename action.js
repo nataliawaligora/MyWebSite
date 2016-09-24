@@ -101,10 +101,25 @@ $(document).ready(function(){
     });
 });
 
-
 $(document).ready(function(){
-    $(('.hamburgerList')).hide();
+    $('.sideBar').hide();
     $('#nav-icon1').click(function(){
-        $('.hamburgerList').toggle();
+        $('.sideBar').slideToggle('slow');
     })
 });
+
+
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+

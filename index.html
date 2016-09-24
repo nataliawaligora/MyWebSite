@@ -14,6 +14,7 @@
     <link rel="Shortcut icon" href="images/icon.png"/>
 </head>
 <body>
+
 <div id="intro">
 
     <div class="mainEffect">
@@ -26,24 +27,27 @@
     <div class="picture"></div>
     <div class="greetingTittle">Hi, my name is Natalia Waligóra and this is my CV</div>
 </div>
-<div id="mainWeb">
+<div id="mainWeb" class="col-xs-12">
     <div id="mainContainer">
         <div class="menu">
-            <div id="nav-icon1">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="col-xs-5 hamburgerList">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a id='main' class='col-xs-12 notLighted' href="#mainContainer">Main</a>
                 <a id='personalInformation' class='col-xs-12 notLighted' href="#personalInformationContainer">Personal
                     Information</a>
-                <a id='workExperience' class='col-xs-12 notLighted' href="#workExperienceContainer">Work Experience</a>
+                <a id='workExperience' class='col-xs-12 notLighted' href="#workExperienceContainer">Work
+                    Experience</a>
                 <a id='education' class='col-xs-12 notLighted' href="#educationContainer">Education</a>
                 <a id='technicalSkills' class='col-xs-12 notLighted' href="#technicalSkillsContainer">Technical
                     skills</a>
             </div>
 
+            <!-- Use any element to open the sidenav -->
+            <span onclick="openNav()"><div id="nav-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div></span>
 
             <div class="list">
                 <a id='main' class='col-lg-2 notLighted' href="#mainContainer">Main</a>
