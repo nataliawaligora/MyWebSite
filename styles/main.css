@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: "Indian Flower", Candara, sans-serif;
-    font-size: large;
+    font-size:large;
 }
 
 /*Intro side*/
-
 .mainEffect {
     height: 100vh;
     width: 100%;
@@ -19,57 +18,6 @@
     z-index: -100;
 }
 
-.greetingTittle {
-    display: inline-block;
-    position: relative;
-    top: 20vh;
-    /*left: 60vh;*/
-    padding: 5vh;
-    border-radius: 2vh;
-    background-color: lavender;
-    border: solid 10px antiquewhite;
-    font-family: Arial, sans-serif;
-    font-size: 2em;
-    display: none;
-
-}
-
-.greetingTittle:before {
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 26px;
-    width: 0;
-    height: 0;
-    border-top: 13px solid transparent;
-    border-right: 26px solid antiquewhite;
-    border-bottom: 13px solid transparent;
-    display: none;
-}
-
-.picture {
-    position: absolute;
-    top: 7vh;
-    left: 7vh;
-    display: inline-block;
-    height: 300px;
-    width: 300px;
-    font-size: xx-large;
-    font-family: "Arial", sans-serif;
-    color: white;
-
-    background: url('../images/me.jpg'), no-repeat;
-    background-size: 120%;
-    background-position-y: -40px;
-    background-position-x: -20px;
-
-    border-radius: 100%;
-    text-decoration: none;
-    border: solid 15px antiquewhite;
-    display: none;
-
-}
-
 #name {
     display: inline-block;
     position: absolute;
@@ -79,12 +27,12 @@
     font-size: 15vh;
     /*color:lightblue;*/
     color: #BF8686;
-
 }
 
 @media screen and (max-width: 890px) {
     #name {
-        left: 50vh;
+        left: 5vh;
+        text-align: center;
     }
 
     .moveButton a {
@@ -95,7 +43,8 @@
 
 @media screen and (max-width: 636px) {
     #name {
-        left: 10vh;
+        left: 1vh;
+        text-align: center;
     }
 
     .moveButton a {
@@ -110,72 +59,73 @@
     left: 0;
     width: 100%;
     height: 100%;
+    background-color:black;
 }
 
 @media (min-aspect-ratio: 16/9) {
     .fullscreen-bg__video {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 }
 
 @media (max-aspect-ratio: 16/9) {
     .fullscreen-bg__video {
-        width: auto;
+        width: 100%;
         height: 100%;
     }
 }
 
 /*Main side */
-#mainContainer, #personalInformationContainer, #workExperienceContainer, #educationContainer, #technicalSkillsContainer, .footer {
+#mainContainer, #personalInformationContainer, #workExperienceContainer, #educationContainer, #technicalSkillsContainer {
     width: 100%;
+    background-size: cover;
 }
 
-#mainContainer, .footer {
+#mainContainer {
 
-    background-image: url('../images/tatry.JPG');
-    background-size: cover;
+    background-image: url('../images/forest.jpg');
+
 }
 
 #personalInformationContainer {
-    background-image: url('../images/loka.jpg');
-    background-size: cover;
+    background-image: url('../images/blackforest.jpg');
+
 }
 
 #workExperienceContainer {
-    background-image: url('../images/giewont.JPG');
-    background-size: cover;
+    background-image: url('../images/forestRiver.jpg');
+
 }
 
 #educationContainer {
     background-image: url('../images/kWierch.JPG');
-    background-size: cover;
+
 }
 
-#technicalSkillsContainer {
-    /*background-image: url('../images/nosal.JPG');*/
-    background-size: cover;
-}
 
 /*Menu*/
 .menu {
     position: fixed;
     z-index: 5;
-    width: 120%;
-    text-align: center;
+    width: 100%;
     margin: auto;
-}
-
-.menu li {
-    display: inline-block;
+    text-align: match-parent;
 
 }
+.menu a {
+    text-align: center;
+    color:white;
+}
 
-.menu ul {
-    background-color: rgba(0, 0, 0, 0.5);
+.menu a:hover {
+    background: rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
+.list {
+    width:100%;
+}
 .notLighted {
     display: inline-block;
     text-decoration: none;
@@ -189,23 +139,21 @@
     background-color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
     color: antiquewhite;
-    text-shadow: 0.2vh 0.2vh antiquewhite;
     padding-left: 1vh;
-
 }
 
-.menu ul li:hover {
-}
+
 
 /*Hambuerger menu*/
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1235px){
     .hamburgerList{
         display: none;
     }
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1235px) {
+
     .hamburgerList{
         background: rgba(255,255,255,1);
     }
@@ -306,8 +254,8 @@
 .mainPicture {
     display: inline-block;
     text-align: center;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     color: white;
     background: url("../images/me.jpg"), no-repeat;
     background-size: 120%;
@@ -315,7 +263,7 @@
     background-position-x: -20px;
     border-radius: 100%;
     text-decoration: none;
-    /*border: solid 15px antiquewhite;*/
+    margin-bottom: 5vh;
 
 }
 
@@ -332,14 +280,25 @@ h1 {
     top: 20vh;
     max-width: 100%;
     background-color: rgba(250, 235, 215, 0.5);
-    border: solid 5vh antiquewhite;
-    border-bottom: solid 5vh antiquewhite;
+    border:solid 5vh rgba(0,0,0, 0.5);
+    border-bottom:solid 5vh rgba(0,0,0, 0.5);
     color: Black;
     overflow: hidden !important;
     margin-left: 20vh;
     margin-right: 20vh;
     text-align: center;
+    min-height: 100vh;
+    padding-left:5vh ;
+    padding-right: 5vh;
+
 }
+
+.articleBackground:first-letter{
+    
+    color:red;
+}
+
+
 
 @media screen and (max-width: 1019px) {
     .articleBackground {
@@ -426,6 +385,7 @@ span {
     font-size: larger;
     font-weight: bolder;
     margin: 2vh 0;
+    padding-bottom: 3vh;
 }
 
 .mainInformation {
@@ -509,3 +469,12 @@ hr{
     .sidenav a {font-size: 18px;}
 }
 
+
+.decorationPatern{
+    height:2px;
+    width: 100%;
+    background-color: black;
+    border-top-color: red;
+    border-bottom-color: red ;
+    margin-bottom: 15vh;
+}
