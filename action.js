@@ -6,33 +6,28 @@ $(document).ready(function () {
         $('#intro').hide();
     });
 
-
     $('.notLighted').click(function () {
         $('.menu .enlight').removeClass('enlight');
         $(this).addClass('enlight');
     });
 
-
     $(window).scroll(function () {
         $(".menu").addClass('darkMenuOnScroll');
     });
-
 
     $('.floorBallArticle').hide();
 
     $('.linkTofloorball').click(function () {
         $('.floorBallArticle').toggle();
-
+        $('.footOrienteeringArticle').hide();
     });
-
 
     $('.footOrienteeringArticle').hide();
 
     $('.linkToOrienteering').click(function () {
         $('.footOrienteeringArticle').toggle();
-
+        $('.floorBallArticle').hide();
     });
-
 
     $('.sidenavLink').click(function () {
         closeNav();
