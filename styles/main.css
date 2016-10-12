@@ -246,8 +246,10 @@
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 100%;
     text-decoration: none;
-    margin-top: 60vh;
-    margin-left: 45vw;
+    position: fixed;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .moveButton a:hover {
@@ -258,8 +260,6 @@
 }
 
 .mainPicture {
-    display: inline-block;
-    text-align: center;
     height: 300px;
     width: 300px;
     color: white;
@@ -270,6 +270,9 @@
     border-radius: 100%;
     text-decoration: none;
     margin-bottom: 5vh;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 
 }
 
@@ -313,6 +316,11 @@ h1::first-letter{
         border-bottom: solid 5vh rgba(0,0,0, 0.5);
         padding-bottom: 5vh;
     }
+    
+    .mainPicture {
+        width: 265px;
+        height: 265px;
+    }
 }
 
 .articleBackground h1 {
@@ -327,8 +335,23 @@ h1::first-letter{
     margin-top: 2vh;
 }
 
+.moveButton a {
+    display: inline-block;
+    padding: 5vh;
+    font-size: xx-large;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
 .imgFormator {
     display: inline-block;
+}
+
+.pictureTitle {
+    text-transform: uppercase;
 }
 
 .linkTofloorball, .linkToOrientering {
@@ -486,7 +509,7 @@ hr{
 }
 
 .experienceDecorationPatern{
-     height:2px;
+    height:2px;
     width: 100%;
     background-color: black;
     border-top-color: red;
@@ -495,7 +518,7 @@ hr{
 }
 
 .educationDecorationPatern{
-     height:2px;
+    height:2px;
     width: 100%;
     background-color: black;
     border-top-color: red;
@@ -506,4 +529,15 @@ hr{
 
 .expertTitle{
     font-weight: bolder;
+}
+
+.footer {
+    color: grey;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.footer a {
+    color: grey;
+    font-size: 1em;
 }

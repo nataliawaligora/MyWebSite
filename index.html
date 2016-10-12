@@ -1,290 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>Natalia`s WebSite</title>
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="Shortcut icon" href="images/icon.png"/>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Natalia's WebSite</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="Shortcut icon" href="images/icon.png"/>
+    </head>
+    <body>
 
-<div id="intro">
-
-    <div class="mainEffect">
-        <video loop muted autoplay poster class="fullscreen-bg__video">
-            <source src="images/laptop.mp4" type="video/webm">
-        </video>
-    </div>
-    <p id="name">Natalia Waligóra</p>
-    <p class="moveButton"><a href="#mainWeb">CV</a></p>
-    <div class="picture"></div>
-    <div class="greetingTittle">Hi, my name is Natalia Waligóra and this is my CV</div>
-</div>
-<div id="mainWeb" class="col-xs-12">
-    <div id="mainContainer">
-        <div class="menu">
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a id='main' class='col-xs-12 notLighted' href="#mainContainer">Main</a>
-                <a id='personalInformation' class='col-xs-12 notLighted' href="#personalInformationContainer">Personal
-                    Information</a>
-                <a id='workExperience' class='col-xs-12 notLighted' href="#workExperienceContainer">Work
-                    Experience</a>
-                <a id='education' class='col-xs-12 notLighted' href="#educationContainer">Education</a>
-                <a id='technicalSkills' class='col-xs-12 notLighted' href="#technicalSkillsContainer">Technical
-                    skills</a>
+        <div id="intro">
+            <div class="mainEffect">
+                <video loop muted autoplay poster class="fullscreen-bg__video">
+                    <source src="images/laptop.mp4" type="video/webm">
+                </video>
             </div>
-
-            <!-- Use any element to open the sidenav -->
-            <span onclick="openNav()"><div id="nav-icon1">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div></span>
-
-            <div class="list">
-                <a id='main' class='col-lg-2 notLighted' href="#mainContainer">Main</a>
-                <a id='personalInformation' class='col-lg-2 notLighted' href="#personalInformationContainer">Personal
-                    Information</a>
-                <a id='workExperience' class='col-lg-2 notLighted' href="#workExperienceContainer">Work Experience</a>
-                <a id='education' class='col-lg-2 notLighted' href="#educationContainer">Education</a>
-                <a id='technicalSkills' class='col-lg-2 notLighted' href="#technicalSkillsContainer">Technical
-                    skills</a>
-            </div>
-        </div>
-        <div class="articleBackground">
-            <h1>Natalia Waligóra</h1>
-            <hr>
-            <hr>
-            <p> Front-end-developer</p>
-            <div class="mainPicture"></div>
-
-            <p class="mainInformation">Recently I `ve completed the infoShare Academy course.<br> I`ve decided that
-                that I wanne give a shot in the ET specialization.<br> The last 2 months in IAC gave me, a lot of
-                knowledge which before I would never dream of.
-            </p>
+            <p id="name">Natalia Waligóra</p>
+            <p class="moveButton"><a href="#mainWeb">CV</a></p>
         </div>
 
-    </div>
-    <div class="pages">
-        <div id="personalInformationContainer">
-            <div class="articleBackground">
-                <article>
-                    <h1>Personal Information</h1>
-                    <hr>
-                    <hr>
-                    <p>I am very sporty girl and one of the most
-                        favourite
-                        activities
-                        I like to do as a hobby is:</p>
+        <div id="mainWeb" class="col-xs-12">
+            <div id="mainContainer">
+                <div class="menu">
+                    <div id="mySidenav" class="sidenav">
+                        <a class="closebtn" onclick="closeNav()">&times;</a>
+                        <a  class="sidenavLink col-xs-12 notLighted" href="#mainContainer">Main</a>
+                        <a  class="sidenavLink col-xs-12 notLighted" href="#personalInformationContainer">Personal
+                            Information</a>
+                        <a  class="sidenavLink col-xs-12 notLighted" href="#workExperienceContainer">Work
+                            Experience</a>
+                        <a  class="sidenavLink col-xs-12 notLighted" href="#educationContainer">Education</a>
+                        <a  class="sidenavLink col-xs-12 notLighted" href="#technicalSkillsContainer">Technical
+                            skills</a>
+                    </div>
+                    <span onclick="openNav()"><span id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span></span>
 
-                    <div class="inLine">
-                        <div class="SportButtonsStyles">
-                            <div class="imgFormator">
-                                <img class="linkTofloorball" src='images/floorball.png'>
-                                <span class="pictureTitle">FLOORBALL</span>
+                    <div class="list col-lg-12 col-md-12">
+
+                        <a class="col-lg-2 col-md-1 notLighted" href="#mainContainer">Main</a>
+                        <a class="col-lg-3 col-md-3  notLighted" href="#personalInformationContainer">Personal
+                            Information</a>
+                        <a class="col-lg-3 col-md-3 notLighted" href="#workExperienceContainer">Work Experience</a>
+                        <a class="col-lg-2 col-md-2  notLighted" href="#educationContainer">Education</a>
+                        <a class="col-lg-2 col-md-3 notLighted" href="#technicalSkillsContainer">Technical
+                            skills</a>
+                    </div>
+                </div>
+                <div class="articleBackground">
+                    <h1>Natalia Waligóra</h1>
+                    <div class="decorationPatern"></div>            
+
+                    <p class="expertTitle"> Front-end-developer</p>
+                    <div class="mainPicture"></div>
+
+                    <p class="mainInformation">Recently I've completed the infoShare Academy course.<br> I've decided that
+                        that I want to give a shot in the IT specialization.<br> The last 2 months in IAC gave me, a lot of
+                        knowledge which before I would never dream of.
+                    </p>
+                </div>
+
+            </div>
+            <div class="pages">
+                <div id="personalInformationContainer">
+                    <div class="articleBackground">
+                        <article>
+                            <h1>Personal Information</h1>
+                            <div class="decorationPatern"></div>  
+                            <p>I am very sporty girl and one of the most
+                                favourite
+                                activities
+                                I like to do as a hobby is:</p>
+
+                            <div class="inLine">
+                                <div>
+                                    <div class="imgFormator">
+                                        <img class="linkTofloorball" src="images/floorball.png">
+                                        <span class="pictureTitle">Floorball</span>
+                                    </div>
+                                    <div class="imgFormator">
+                                        <img class="linkToOrienteering" src="images/footOrienteering.png">
+                                        <span class="pictureTitle">Foot - O</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="imgFormator">
-                                <img class="linkToOrienteering" src='images/footOrienteering.png'>
-                                <span class="pictureTitle">FOOT - O</span>
+                            <div class="floorBallArticle">
+                                <p id="floorball">Floorball is the kind of hokey without the ice. I have been playing this
+                                    game
+                                    since
+                                    2013 and at the beginning there were 2 girls in the team, including me.
+                                    Now sometimes there is even 50% of women in group.
+                                    I am still learning but now I can see that this game gave me a lot of experience,
+                                    how to work in team and that I can't misjudge the opponent.</p>
+                                <img class="uniPicture" src="images/uni.jpg">
                             </div>
+                            <div class="footOrienteeringArticle">
+                                <p id="footOrienteering">Foot orienteering is time racing sport, where the
+                                    participansts are expected to find the control points ,on the specific area, which have
+                                    been shown on the given map. The most exciting element of that is the End of the route, when I know that it is
+                                    possible to defeat my own weakness. It also allowed me to loose almost 5 kg.
+                                </p>
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div id="workExperienceContainer">
+                    <div class="articleBackground">
+                        <article>
+                            <h1>Work experience</h1>
+                            <div class="experienceDecorationPatern"></div>  
+                            <div>
+                                <h2 class="col-md-12 workExperienceStyleTitle">II.2015 – IV.2016 Promat – Woda Sp z o.o.
+                                    Gdynia
+                                </h2>
+
+                                <div class="workExperienceStyle"> Position of technologist. Wastewater and water treatment desinging based on filtration system such as:
+                                    Reverse Osmosis system, Ultrafiltration system and ion exchange.
+                                </div>
+
+                            </div>
+                            <h2 class="col-md-12 workExperienceStyleTitle">IV.2014 – VI.2014 Galwanizernia-Radmor Sp. zo.o
+                            </h2>
+
+                            <div class="workExperienceStyle"> Practice conected with masters's thesis.
+
+                                Practice in the "Galwanizeria - Radmor" comapny.
+
+                                Proposal of solving the problem with the usage of ion-echange columns which 
+                                allow to retrive cokel from the waters used to rinse nickel plated elements.
+
+                            </div>
+
+                            <div>
+                                <h2 class="workExperienceStyleTitle">VII.2012 "Jard" Jadwiga Doffek</h2>
+                                <div class="workExperienceStyle"> Indiwidual practice conected with desiging of sewerage and water supply.
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="workExperienceStyleTitle"> I.2011 – XI.2014 Synergia. Waligóra W. Construction design
+                                    company</h2>
+                                <div class="workExperienceStyle"> Practice in the "Synergia" company conected with technical drawing with BricsCad and AutoCad programs.
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div id="educationContainer">
+                    <div class="articleBackground">
+                        <article>
+                            <h1>Education</h1>
+                            <div class="educationDecorationPatern"></div>  
+                            <div class="col-md-12 workExperienceStyleTitle">2014 - Gdansk The University of Technology – MSc
+                            </div>
+
+
+                            <h1>About the Course and Project:</h1>
+                            <div class="educationDecorationPatern"></div>  
+
+                            <div class="col-md-12 workExperienceStyleTitle"> May - July 2016 InfoShareAcademy Course Front-
+                                End-Developer
+                            </div>
+
+                            <article>The course allowed me to work in SCRUM methodology. Every day we had daily standup meeting.
+                                During the meeting we discussed what we had done and what were we going to do during that day,
+                                we also shared our impediments. It took us about 10-15 minutes.
+                                There were four people in my team. After every Sprint we had been changing the person who became
+                                a Scrum Master. It allowed us to understand the duties of that role and how SCRUM works.
+                                As a team we had two projects to perform.
+                                - The first one was the single page website to encourage people to sign up to a newsletter.
+                                Website shows the team who created it, the product which was promoted and the game which
+                                appeared after signing up. Main technologies: HTML, CSS, JS
+                                - The second project was called „Expens Planner,”. It was built to allow smooth and beautiful
+                                user experience through the responsive single page application. The application contained the
+                                expenses calculator, currency converter and migration charts.
+                                Main technologies: HTML, CSS, JS, JQuery, AngularJS, localStorage, Google Maps
+                            </article>
+
+                            Technologies:
+                            Javascript JQuery, HTML, CSS, Angular, Bootstrap
+                        </article>
+                    </div>
+                </div>
+
+                <div id="technicalSkillsContainer">
+                    <div class="articleBackground">
+                        <h1>Technical Skills</h1>
+                        <div class="decorationPatern"></div>  
+                        <div class="skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <img class="skillsPicture" src="images/skills/HTML5.png">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+
+                        </div>
+                        <div class="skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <img class="skillsPicture" src="images/skills/css.png">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                        </div>
+
+                        <div class=" skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <img class="skillsPicture" src="images/skills/boostrap.png">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                        </div>
+                        <div class="skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <img class="skillsPicture" src="images/skills/javascript.png">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/blackStar.svg">
+
+                        </div>
+                        <div class="skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <img class="skillsPicture" src="images/skills/jquery.png">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                        </div>
+                        <div class=" skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <img class="skillsPicture" src="images/skills/webStorm.png">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                        </div>
+                        <div class=" skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <img class="skillsPicture" src="images/skills/github.png">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                        </div>
+                        <div class=" skillsStars col-lg-6 col-md-6 col-sm-6">
+                            <img class="skillsPicture" src="images/skills/jira_64x64.png">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
+                            <img class="starSize" src="images/skills/star.svg">
                         </div>
                     </div>
-                    <div class="floorBallArticle">
-                        <p id="floorball">Floorball is the kind of hokey without the ice. I have been playing this
-                            game
-                            since
-                            2013 and at the beginning there were 2 girls in the team, including me.
-                            Now sometimes there is even 50% of women in group.
-                            I am still learning but now I can see that this game gave me a lot of experience,
-                            how to work in team and that I can`t misjudge the opponent.</p>
-                        <img class="uniPicture" src="images/uni.jpg">
-                    </div>
-                    <div class="footOrienteeringArticle">
-                        <p id="footOrienteering">Foot orienteering is time racing sport, where the
-                            participansts are expected to find the control points ,on the specific area, which have
-                            been
-                            shown on the given map.
-                            The most exciting element of that is the End of the route, when I know that it is
-                            possible
-                            to defeat
-                            my own weakness. It also allowed me to loos almost 5 kg.
-                        </p>
-
-                    </div>
-
-
-                </article>
-            </div>
-        </div>
-        <div id="workExperienceContainer">
-            <div class="articleBackground">
-                <article>
-                    <h1>Work experience</h1>
-                    <hr>
-                    <hr>
-                    <div>
-
-                        <div class="col-md-12 workExperienceStyleTitle">II.2015 – IV.2016 Promat – Woda Sp z o.o.
-                            Gdynia
-                        </div>
-
-                        <div class="workExperienceStyle"> Projektowanie Stacji Uzdatniania Wody i Ścieków na bazie
-                            systemów filtracyjnych typu: złoża jonowymienne, odwrócona
-                            osmoza oraz ultrafiltracja.
-                        </div>
-
-                    </div>
-                    <div class="col-md-12 workExperienceStyleTitle">IV.2014 – VI.2014 Galwanizernia-Radmor Sp. zo.o
-                    </div>
-
-                    <div class="workExperienceStyle"> Indywidualne praktyki "Galwanizernia - Radmor" w ramach
-                        projektu magisterskiego związanego z instalacją podczyszczania
-                        ścieków popłucznych po procesach niklowania zapocą kolumn
-                        jonitowych oraz odzysku ww. metalu ciężkiego.
-                        Praca magisterska zakończona oceną bardzo dobrą.
-                    </div>
-
-                    <div>
-                        <p class="workExperienceStyleTitle">VII.2012 "Jard" Jadwiga Doffek</p>
-                        <div class="workExperienceStyle"> Indywidualne praktyki w prywatnej firmie ”Jard” Jadwiga Doffek
-                            w ramach nauki projektowania instalacji HVAC oraz instalacji
-                            kanalizacyjnych i wodociągowych.
-                        </div>
-                    </div>
-                    <div>
-                        <p class="workExperienceStyleTitle"> I.2011 – XI.2014 Synergia. Waligóra W. Construction design
-                            company</p>
-                        <div class="workExperienceStyle"> Praktyki w firmie ”Synergia” w ramach odczytywania i tworzenia
-                            rysunków za pomocą programów BricsCad i AutoCad.
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div id="educationContainer">
-            <div class="articleBackground">
-                <article>
-                    <h1>Education</h1>
-                    <hr>
-                    <hr>
-                    <div class="col-md-12 workExperienceStyleTitle">2014 - Gdansk The University of Technology – MSc
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-
-
-                    <h1>About the Course and Project:</h1>
-                    <hr>
-                    <hr>
-                    <div class="col-md-12 workExperienceStyleTitle"> May - July 2016 InfoShareAcademy Course Front-
-                        End-Developer
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <article>The course allowed me to work in SCRUM methodology. Every day we had daily standup meeting.<br>
-                        During the meeting we discussed what we had done and what were we going to do during that day,
-                        we also shared our impediments. It took us about 10-15 minutes.
-                        There were four people in my team. After every Sprint we had been changing the person who became
-                        a Scrum Master. It allowed us to understand the duties of that role and how SCRUM works.
-                        As a team we had two projects to perform.
-                        - The first one was the single page website to encourage people to sign up to a newsletter.
-                        Website shows the team who created it, the product which was promoted and the game which
-                        appeared after signing up. Main technologies: HTML, CSS, JS
-                        - The second project was called „Expens Planner,”. It was built to allow smooth and beautiful
-                        user experience through the responsive single page application. The application contained the
-                        expenses calculator, currency converter and migration charts.
-                        Main technologies: HTML, CSS, JS, JQuery, AngularJS, localStorage, Google Maps
-                    </article>
-
-                    Technologies:
-                    Javascript JQuery, HTML, CSS, Angular, Bootstrap
-                </article>
-            </div>
-        </div>
-
-        <div id="technicalSkillsContainer">
-            <div class="articleBackground">
-                <h1>Technical Skills</h1>
-                <hr>
-                <hr>
-                <div class="skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <img class="skillsPicture" src="images/HTML5.png">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-
-                </div>
-                <div class="skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <img class="skillsPicture" src="images/css.png">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                </div>
-
-                <div class=" skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <img class="skillsPicture" src="images/boostrap.png">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                </div>
-                <div class="skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <img class="skillsPicture" src="images/javascript.png">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/blackStar.svg">
-
-                </div>
-                <div class="skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <img class="skillsPicture" src="images/jquery.png">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                </div>
-                <div class=" skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <img class="skillsPicture" src="images/webStorm.png">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                </div>
-                <div class=" skillsStars col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <img class="skillsPicture" src="images/github.png">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                </div>
-                <div class=" skillsStars col-lg-6 col-md-6 col-sm-6">
-                    <img class="skillsPicture" src="images/jira_64x64.png">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
-                    <img class="starSize" src="images/sttar.svg">
                 </div>
             </div>
-            <div class="footer"></div>
+            <div class="footer">Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a>
+                from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                    href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                    3.0 BY</a></div>
         </div>
-    </div>
-    <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a>
-        from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a
-                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
-            3.0 BY</a></div>
-</div>
 
-<script type="text/javascript" src="libs/jquery-2.2.3.min.js"></script>
-<!--<script type="text/javascript" src="libs/jquery-3.0.0.min%20.js"></script>-->
-<script type="text/javascript" src="libs/jquery-migrate-1.4.1.min.js"></script>
-<script type="text/javascript" src="action.js"></script>
-<script type="text/javascript" src="libs/bootstrap.js"></script>
+        <script type="text/javascript" src="action.js"></script>
+        <!--<script type="text/javascript" src="libs/bootstrap.js"></script>-->
 
-
-</body>
+    </body>
 </html>
